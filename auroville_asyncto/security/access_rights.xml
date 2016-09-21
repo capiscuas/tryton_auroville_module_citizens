@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<tryton>
+    <data>
+<!-- Create the Asyncto Administration group -->
+        <record model="res.group" id="group_asyncto_admin">
+            <field name="name">Asyncto Administration</field>
+        </record>
+
+<!-- Assign the Group to the "admin" user -->
+        <record model="res.user-res.group" id="user_admin_group_asyncto">
+            <field name="user" ref="res.user_admin"/>
+            <field name="group" ref="group_asyncto_admin"/>
+        </record>
+
+        <record model="res.user-res.group" id="user_trigger_group_asyncto">
+            <field name="user" ref="res.user_trigger"/>
+            <field name="group" ref="group_asyncto_admin"/>
+        </record>
+
+
+<!-- Access rights to models for the assets admin group -->
+		<record model="ir.model.access" id="access_asyncto_admin">
+            <field name="model" search="[('model', '=', 'auroville.asyncto')]"/>
+            <field name="group" ref="group_asyncto_admin"/>
+            <field name="perm_read" eval="True"/>
+            <field name="perm_write" eval="True"/>
+            <field name="perm_create" eval="True"/>
+            <field name="perm_delete" eval="True"/>
+        </record>
+
+<!-- Default access rights to models -->
+		<record model="ir.model.access" id="access_asyncto_default">
+            <field name="model" search="[('model', '=', 'auroville.asyncto')]"/>
+            <field name="perm_read" eval="False"/>
+            <field name="perm_write" eval="False"/>
+            <field name="perm_create" eval="False"/>
+            <field name="perm_delete" eval="False"/>
+        </record>
+
+    </data>
+</tryton>

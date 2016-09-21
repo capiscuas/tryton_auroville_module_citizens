@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<tryton>
+    <data>
+
+<!-- Access to Menus -->
+
+		<!-- Conf menu -->
+		<record model="ir.ui.menu-res.group" id="menu_housing_conf_people_admin">
+            <field name="menu" ref="auroville_housing_conf_menu"/>
+            <field name="group" ref="auroville_people.group_people_admin"/>
+        </record>
+
+        <record model="ir.ui.menu-res.group" id="menu_housing_conf_nationality_admin">
+            <field name="menu" ref="menu_nationality_list"/>
+            <field name="group" ref="auroville_people.group_people_admin"/>
+        </record>
+
+        <record model="ir.ui.menu-res.group" id="menu_housing_conf_community_admin">
+            <field name="menu" ref="menu_community_list"/>
+            <field name="group" ref="auroville_assets.group_assets_admin"/>
+        </record>
+
+        <record model="ir.ui.menu-res.group" id="menu_housing_conf_residence_type_admin">
+            <field name="menu" ref="menu_residence_type_list"/>
+            <field name="group" ref="auroville_assets.group_assets_admin"/>
+        </record>
+
+        <record model="ir.ui.menu-res.group" id="menu_housing_conf_location_area_admin">
+            <field name="menu" ref="menu_location_area_list"/>
+            <field name="group" ref="auroville_assets.group_assets_admin"/>
+        </record>
+
+        <record model="ir.ui.menu-res.group" id="menu_housing_conf_presence_status_admin">
+            <field name="menu" ref="menu_residence_presence_status_list"/>
+            <field name="group" ref="auroville_assets.group_assets_admin"/>
+        </record>
+
+		<!-- List menu -->
+
+		<record model="ir.ui.menu-res.group" id="menu_housing_list_assets_admin">
+            <field name="menu" ref="auroville_housing_list_menu"/>
+            <field name="group" ref="auroville_assets.group_assets_admin"/>
+        </record>
+
+        <record model="ir.ui.menu-res.group" id="menu_housing_list_people_admin">
+            <field name="menu" ref="auroville_housing_list_menu"/>
+            <field name="group" ref="auroville_people.group_people_admin"/>
+        </record>
+
+
+        <record model="ir.ui.menu-res.group" id="menu_housing_residents_list_admin">
+            <field name="menu" ref="menu_residentss_list"/>
+            <field name="group" ref="auroville_people.group_people_admin"/>
+        </record>
+
+		<record model="ir.ui.menu-res.group" id="menu_housing_assets_list_admin">
+            <field name="menu" ref="menu_assets_list"/>
+            <field name="group" ref="auroville_assets.group_assets_admin"/>
+        </record>
+
+        <!-- Documents -->
+
+        <record model="ir.ui.menu-res.group" id="menu_housing_agreement_list_admin">
+            <field name="menu" ref="menu_agreement_list"/>
+            <field name="group" ref="auroville_assets.group_assets_admin"/>
+        </record>
+
+        <!-- Wizards -->
+
+        <record model="ir.ui.menu-res.group" id="menu_housing_agreement_wizard_admin">
+            <field name="menu" ref="menu_agreement_wizard"/>
+            <field name="group" ref="auroville_assets.group_assets_admin"/>
+        </record>
+
+
+    </data>
+</tryton>

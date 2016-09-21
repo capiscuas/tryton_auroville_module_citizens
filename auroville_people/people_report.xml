@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tryton>
+    <data>
+        <record model="ir.action.report" id="report_people_masterlist">
+            <field name="name">Master List</field>
+            <field name="model">auroville.people</field>
+            <field name="report_name">people.masterlist</field>
+            <field name="report">auroville_people/report/people_masterlist.odt</field>
+        </record>
+
+		<record model="ir.action.keyword" id="report_masterlist_people">
+            <field name="keyword">form_print</field>
+            <field name="model">auroville.people,-1</field>
+            <field name="action" ref="report_people_masterlist"/>
+        </record>
+
+
+    </data>
+</tryton>

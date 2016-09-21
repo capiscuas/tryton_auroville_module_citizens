@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<tryton>
+    <data>
+<!-- Create the Assets Administration group -->
+        <record model="res.group" id="group_assets_admin">
+            <field name="name">Assets Administration</field>
+        </record>
+
+<!-- Assign the Group to the "admin" user -->
+        <record model="res.user-res.group" id="user_admin_group_assets">
+            <field name="user" ref="res.user_admin"/>
+            <field name="group" ref="group_assets_admin"/>
+        </record>
+
+         <record model="res.user-res.group" id="user_trigger_group_assets">
+            <field name="user" ref="res.user_trigger"/>
+            <field name="group" ref="group_assets_admin"/>
+        </record>
+
+
+
+
+<!-- Access rights to models for the assets admin group -->
+		<record model="ir.model.access" id="access_assets_admin">
+            <field name="model" search="[('model', '=', 'auroville.assets')]"/>
+            <field name="group" ref="group_assets_admin"/>
+            <field name="perm_read" eval="True"/>
+            <field name="perm_write" eval="True"/>
+            <field name="perm_create" eval="True"/>
+            <field name="perm_delete" eval="True"/>
+        </record>
+
+   		<record model="ir.model.access" id="access_community_admin">
+            <field name="model" search="[('model', '=', 'auroville.community')]"/>
+            <field name="group" ref="group_assets_admin"/>
+            <field name="perm_read" eval="True"/>
+            <field name="perm_write" eval="True"/>
+            <field name="perm_create" eval="True"/>
+            <field name="perm_delete" eval="True"/>
+        </record>
+
+
+        <record model="ir.model.access" id="access_agreement_admin">
+            <field name="model" search="[('model', '=', 'auroville.agreement')]"/>
+            <field name="group" ref="group_assets_admin"/>
+            <field name="perm_read" eval="True"/>
+            <field name="perm_write" eval="True"/>
+            <field name="perm_create" eval="True"/>
+            <field name="perm_delete" eval="True"/>
+        </record>
+
+        <record model="ir.model.access" id="access_residence_type_admin">
+            <field name="model" search="[('model', '=', 'auroville.residence_type')]"/>
+            <field name="group" ref="group_assets_admin"/>
+            <field name="perm_read" eval="True"/>
+            <field name="perm_write" eval="True"/>
+            <field name="perm_create" eval="True"/>
+            <field name="perm_delete" eval="True"/>
+        </record>
+
+        <record model="ir.model.access" id="access_residence_presence_status_admin">
+            <field name="model" search="[('model', '=', 'auroville.residence_presence_status')]"/>
+            <field name="group" ref="group_assets_admin"/>
+            <field name="perm_read" eval="True"/>
+            <field name="perm_write" eval="True"/>
+            <field name="perm_create" eval="True"/>
+            <field name="perm_delete" eval="True"/>
+        </record>
+
+        <record model="ir.model.access" id="access_location_area_admin">
+            <field name="model" search="[('model', '=', 'auroville.location_area')]"/>
+            <field name="group" ref="group_assets_admin"/>
+            <field name="perm_read" eval="True"/>
+            <field name="perm_write" eval="True"/>
+            <field name="perm_create" eval="True"/>
+            <field name="perm_delete" eval="True"/>
+        </record>
+
+<!-- Default access rights to models -->
+		<record model="ir.model.access" id="access_assets_default">
+            <field name="model" search="[('model', '=', 'auroville.assets')]"/>
+            <field name="perm_read" eval="False"/>
+            <field name="perm_write" eval="False"/>
+            <field name="perm_create" eval="False"/>
+            <field name="perm_delete" eval="False"/>
+        </record>
+
+		<record model="ir.model.access" id="access_community_default">
+            <field name="model" search="[('model', '=', 'auroville.community')]"/>
+            <field name="perm_read" eval="False"/>
+            <field name="perm_write" eval="False"/>
+            <field name="perm_create" eval="False"/>
+            <field name="perm_delete" eval="False"/>
+        </record>
+
+		<record model="ir.model.access" id="access_agreement_default">
+            <field name="model" search="[('model', '=', 'auroville.agreement')]"/>
+            <field name="perm_read" eval="False"/>
+            <field name="perm_write" eval="False"/>
+            <field name="perm_create" eval="False"/>
+            <field name="perm_delete" eval="False"/>
+        </record>
+
+        <record model="ir.model.access" id="access_residence_type_default">
+            <field name="model" search="[('model', '=', 'auroville.residence_type')]"/>
+            <field name="perm_read" eval="True"/>
+            <field name="perm_write" eval="False"/>
+            <field name="perm_create" eval="False"/>
+            <field name="perm_delete" eval="False"/>
+        </record>
+
+        <record model="ir.model.access" id="access_residence_presence_status_default">
+            <field name="model" search="[('model', '=', 'auroville.residence_presence_status')]"/>
+            <field name="perm_read" eval="True"/>
+            <field name="perm_write" eval="False"/>
+            <field name="perm_create" eval="False"/>
+            <field name="perm_delete" eval="False"/>
+        </record>
+
+        <record model="ir.model.access" id="access_location_area_default">
+            <field name="model" search="[('model', '=', 'auroville.location_area')]"/>
+            <field name="perm_read" eval="True"/>
+            <field name="perm_write" eval="False"/>
+            <field name="perm_create" eval="False"/>
+            <field name="perm_delete" eval="False"/>
+        </record>
+
+    </data>
+</tryton>

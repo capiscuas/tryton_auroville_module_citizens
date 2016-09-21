@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<tryton>
+    <data>
+<!-- Create the People Administration group -->
+        <record model="res.group" id="group_people_admin">
+            <field name="name">People Administration</field>
+        </record>
+
+        <record model="res.group" id="group_people_entry">
+            <field name="name">People Entry Group</field>
+        </record>
+
+        <record model="res.group" id="group_people_housing_admin">
+            <field name="name">People Housing Group Admin</field>
+        </record>
+
+
+<!-- Assign the Group to the "admin" user -->
+
+        <record model="res.user-res.group" id="user_admin_group_people">
+            <field name="user" ref="res.user_admin"/>
+            <field name="group" ref="group_people_admin"/>
+        </record>
+
+        <record model="res.user-res.group" id="user_trigger_group_people">
+            <field name="user" ref="res.user_trigger"/>
+            <field name="group" ref="group_people_admin"/>
+        </record>
+
+
+
+<!-- Access rights to models for the people admin group -->
+
+		<record model="ir.model.access" id="access_people_admin">
+            <field name="model" search="[('model', '=', 'auroville.people')]"/>
+            <field name="group" ref="group_people_admin"/>
+            <field name="perm_read" eval="True"/>
+            <field name="perm_write" eval="True"/>
+            <field name="perm_create" eval="True"/>
+            <field name="perm_delete" eval="True"/>
+        </record>
+
+        <record model="ir.model.access" id="access_nationality_admin">
+            <field name="model" search="[('model', '=', 'auroville.nationality')]"/>
+            <field name="group" ref="group_people_admin"/>
+            <field name="perm_read" eval="True"/>
+            <field name="perm_write" eval="True"/>
+            <field name="perm_create" eval="True"/>
+            <field name="perm_delete" eval="True"/>
+        </record>
+
+<!-- Default access rights to models -->
+
+        <record model="ir.model.access" id="access_people_default">
+            <field name="model" search="[('model', '=', 'auroville.people')]"/>
+            <field name="perm_read" eval="False"/>
+            <field name="perm_write" eval="False"/>
+            <field name="perm_create" eval="False"/>
+            <field name="perm_delete" eval="False"/>
+        </record>
+
+        <record model="ir.model.access" id="access_nationality_default">
+            <field name="model" search="[('model', '=', 'auroville.nationality')]"/>
+            <field name="perm_read" eval="True"/>
+            <field name="perm_write" eval="False"/>
+            <field name="perm_create" eval="False"/>
+            <field name="perm_delete" eval="False"/>
+        </record>
+
+
+    </data>
+</tryton>

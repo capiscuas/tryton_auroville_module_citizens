@@ -1,0 +1,307 @@
+<?xml version="1.0"?>
+<!-- This file is part of Tryton.  The COPYRIGHT file at the top level of
+this repository contains the full copyright notices and license terms. -->
+<tryton>
+    <data>
+
+<!-- ASSETS DATA -->
+
+        <record model="ir.ui.view" id="auroville_assets_view_form">
+            <field name="model">auroville.assets</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <![CDATA[
+                <form string="assets">
+<!-- Main Info -->
+                    <group string="Main Info" id="assets_main_info">
+                    	<group col="4" id="patient_main_info1">
+                        	<label name="community"/>
+                            <field name="community" colspan="1" widget="selection"/>
+                            <newline/>
+                            <label name="location"/>
+                            <field name="location" widget="selection"/>
+                            <newline/>
+                            <label name="type"/>
+                            <field name="type" widget="selection"/>
+                            <newline/>
+                            <label name="status"/>
+                            <field name="status" widget="selection"/>
+                            <newline/>
+                            <label name="occupation"/>
+                            <field name="occupation"/>
+                            <newline/>
+							<label name="bedroom"/>
+                            <field name="bedroom"/>
+                            <newline/>
+							<label name="level"/>
+                            <field name="level"/>
+                            <newline/>
+							<label name="carpet_area"/>
+                            <field name="carpet_area"/>
+                            <newline/>
+							<label name="floor_location"/>
+                            <field name="floor_location"/>
+                        </group>
+
+                    </group>
+                </form>
+                ]]>
+            </field>
+        </record>
+
+
+        <record model="ir.ui.view" id="auroville_assets_tree">
+            <field name="model">auroville.assets</field>
+            <field name="type">tree</field>
+            <field name="arch" type="xml">
+                <![CDATA[
+                <tree string="assets">
+                	<field name="community" expand="1" width="50"/>
+                    <field name="location" expand="1"/>
+                    <field name="status" expand="1"/>
+                    <field name="type" expand="1"/>
+					<field name="occupation" expand="1"/>
+					<field name="carpet_area" expand="1"/>
+					<field name="floor_location" expand="1"/>
+					<field name="bedroom" expand="1"/>
+					<field name="level" expand="1"/>
+
+                </tree>
+                ]]>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="view_auroville_people_form">
+            <field name="model">auroville.people</field>
+            <field name="inherit" ref="auroville_people.auroville_people_view_form"/>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <![CDATA[
+                <data>
+                    <xpath
+                        expr="/form/notebook/page[@id=&quot;family_info&quot;]"
+                        position="after">
+                        <page string="Agreements" id="auroville_agreements">
+	                       <field name="agreement"/>
+                        </page>
+                    </xpath>
+                </data>
+                ]]>
+            </field>
+        </record>
+
+
+
+
+<!-- Community -->
+
+
+        <record model="ir.ui.view" id="auroville_community_tree">
+            <field name="model">auroville.community</field>
+            <field name="type">tree</field>
+            <field name="arch" type="xml">
+                <![CDATA[
+                <tree string="community"  editable="bottom">
+                	<field name="name" expand="1" width="50"/>
+                </tree>
+                ]]>
+            </field>
+        </record>
+
+
+
+<!-- Residence type -->
+
+
+        <record model="ir.ui.view" id="auroville_residence_type_tree">
+            <field name="model">auroville.residence_type</field>
+            <field name="type">tree</field>
+            <field name="arch" type="xml">
+                <![CDATA[
+                <tree string="Residence type" editable="bottom" >
+                	<field name="name" expand="1" width="50"/>
+                </tree>
+                ]]>
+            </field>
+        </record>
+
+
+
+<!-- Location area -->
+
+        <record model="ir.ui.view" id="auroville_location_area_tree">
+            <field name="model">auroville.location_area</field>
+            <field name="type">tree</field>
+            <field name="arch" type="xml">
+                <![CDATA[
+                <tree string="Location" editable="bottom">
+                	<field name="name" expand="1" width="50"/>
+                </tree>
+                ]]>
+            </field>
+        </record>
+
+
+
+<!-- Residence presence status -->
+
+
+        <record model="ir.ui.view" id="auroville_residence_presence_status_tree">
+            <field name="model">auroville.residence_presence_status</field>
+            <field name="type">tree</field>
+            <field name="arch" type="xml">
+                <![CDATA[
+                <tree string="Residence presence status" editable="bottom">
+                	<field name="name" expand="1" width="50"/>
+                </tree>
+                ]]>
+            </field>
+        </record>
+
+
+
+<!-- Agreement DATA -->
+
+        <record model="ir.ui.view" id="auroville_agreement_view_form">
+            <field name="model">auroville.agreement</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <![CDATA[
+                <form string="Agreement">
+<!-- Main Info -->
+                    <group string="Main Info" id="agreement_main_info">
+                    	<group col="4" id="patient_main_info1">
+                            <label name="date"/>
+                            <field name="date"/>
+                            <newline/>
+                        	<label name="resident"/>
+                            <field name="resident" colspan="1"/>
+                            <newline/>
+                            <label name="assets"/>
+                            <field name="assets"/>
+                        </group>
+
+                    </group>
+                </form>
+                ]]>
+            </field>
+        </record>
+
+
+        <record model="ir.ui.view" id="auroville_agreement_tree">
+            <field name="model">auroville.agreement</field>
+            <field name="type">tree</field>
+            <field name="arch" type="xml">
+                <![CDATA[
+                <tree string="people">
+                	<field name="date" expand="1" width="50"/>
+                    <field name="resident" expand="1"/>
+                    <field name="community" expand="1"/>
+                    <field name="type" expand="1"/>
+                    <field name="carpet_area" expand="1"/>
+                    <field name="floor_location" expand="1"/>
+                    <field name="user_id" expand="1"/>
+
+
+                </tree>
+                ]]>
+            </field>
+        </record>
+
+
+		<!-- Agreement Wizard-->
+
+
+		<record model="ir.ui.view" id="assets_wizard_form1">
+            <field name="model">auroville_assets.wizard1</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <![CDATA[
+                	<form string="Resident">
+	                	<label name="resident"/>
+	                    <field name="resident"/>
+	            	</form>
+                ]]>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="assets_wizard_form2">
+            <field name="model">auroville_assets.wizard2</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <![CDATA[
+                <form string="Assets">
+                    <newline/>
+                    <label name="assets"/>
+                    <field name="assets"/>
+                </form>
+                ]]>
+            </field>
+        </record>
+
+
+ <!-- Requests  -->
+
+         <record model="ir.ui.view" id="auroville_request_view_form">
+            <field name="model">auroville.request</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <![CDATA[
+                <form string="assets">
+<!-- Main Info -->
+                    <group string="Main Info" id="request_main_info">
+                    	<label name="resident"/>
+                        <field name="resident" colspan="1"/>
+                        <newline/>
+	                </group>
+                </form>
+                ]]>
+            </field>
+        </record>
+
+
+        <record model="ir.ui.view" id="auroville_request_tree">
+            <field name="model">auroville.request</field>
+            <field name="type">tree</field>
+            <field name="arch" type="xml">
+                <![CDATA[
+                <tree string="assets">
+                	<field name="resident" expand="1"/>
+                </tree>
+                ]]>
+            </field>
+        </record>
+
+
+	<!-- Shortcut to the Agreement from the Request -->
+        <record model="ir.action.act_window" id="act_agreement_form1">
+            <field name="name">Create the Agreement</field>
+            <field name="res_model">auroville.agreement</field>
+        </record>
+        <record model="ir.action.keyword"     id="act_open_request_keyword1">
+            <field name="keyword">form_action</field>
+            <field name="model">auroville.request,-1</field>
+            <field name="action" ref="act_agreement_form1"/>
+        </record>
+
+
+
+
+	      <!-- Cron -->
+	    <record model="ir.cron" id="cron_trigger_time">
+            <field name="name">Asyncto to Community sync</field>
+            <field name="request_user" ref="res.user_admin"/>
+            <field name="user" ref="res.user_trigger"/>
+            <field name="active" eval="True"/>
+            <field name="interval_number">60</field>
+            <field name="interval_type">minutes</field>
+            <field name="number_calls">-1</field>
+            <field name="repeat_missed" eval="False"/>
+            <field name="model">auroville.community</field>
+            <field name="function">asyncto_sync</field>
+
+        </record>
+
+	</data>
+
+</tryton>

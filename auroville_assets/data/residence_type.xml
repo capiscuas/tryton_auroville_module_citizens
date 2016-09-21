@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<!-- This file is part of Tryton.  The COPYRIGHT file at the top level of
+this repository contains the full copyright notices and license terms. -->
+<tryton>
+   	<data skiptest="1">
+		<record model="auroville.residence_type" id="rt1">
+			<field name="name">Row house</field>
+		</record>
+		<record model="auroville.residence_type" id="rt2">
+			<field name="name">Single standing house</field>
+		</record>
+		<record model="auroville.residence_type" id="rt3">
+			<field name="name">Flat</field>
+		</record>
+		<record model="auroville.residence_type" id="rt4">
+			<field name="name">Room</field>
+		</record>
+		<record model="auroville.residence_type" id="rt5">
+			<field name="name">Keet house</field>
+		</record>
+		<record model="auroville.residence_type" id="rt6">
+			<field name="name">Mobile home</field>
+		</record>
+	</data>
+</tryton>

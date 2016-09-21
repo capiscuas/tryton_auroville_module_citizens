@@ -1,0 +1,590 @@
+<?xml version="1.0"?>
+<!-- This file is part of Tryton.  The COPYRIGHT file at the top level of
+this repository contains the full copyright notices and license terms. -->
+<tryton>
+   	<data skiptest="1">
+		<record model="auroville.nationality" id="nat0">
+			<field name="name">Afghan</field>
+		</record>
+		<record model="auroville.nationality" id="nat1">
+			<field name="name">Albanian</field>
+		</record>
+		<record model="auroville.nationality" id="nat2">
+			<field name="name">Algerian</field>
+		</record>
+		<record model="auroville.nationality" id="nat3">
+			<field name="name">American</field>
+		</record>
+		<record model="auroville.nationality" id="nat4">
+			<field name="name">Andorran</field>
+		</record>
+		<record model="auroville.nationality" id="nat5">
+			<field name="name">Angolan</field>
+		</record>
+		<record model="auroville.nationality" id="nat6">
+			<field name="name">Antiguans</field>
+		</record>
+		<record model="auroville.nationality" id="nat7">
+			<field name="name">Argentinean</field>
+		</record>
+		<record model="auroville.nationality" id="nat8">
+			<field name="name">Armenian</field>
+		</record>
+		<record model="auroville.nationality" id="nat9">
+			<field name="name">Australian</field>
+		</record>
+		<record model="auroville.nationality" id="nat10">
+			<field name="name">Austrian</field>
+		</record>
+		<record model="auroville.nationality" id="nat11">
+			<field name="name">Azerbaijani</field>
+		</record>
+		<record model="auroville.nationality" id="nat12">
+			<field name="name">Bahamian</field>
+		</record>
+		<record model="auroville.nationality" id="nat13">
+			<field name="name">Bahraini</field>
+		</record>
+		<record model="auroville.nationality" id="nat14">
+			<field name="name">Bangladeshi</field>
+		</record>
+		<record model="auroville.nationality" id="nat15">
+			<field name="name">Barbadian</field>
+		</record>
+		<record model="auroville.nationality" id="nat16">
+			<field name="name">Barbudans</field>
+		</record>
+		<record model="auroville.nationality" id="nat17">
+			<field name="name">Batswana</field>
+		</record>
+		<record model="auroville.nationality" id="nat18">
+			<field name="name">Belarusian</field>
+		</record>
+		<record model="auroville.nationality" id="nat19">
+			<field name="name">Belgian</field>
+		</record>
+		<record model="auroville.nationality" id="nat20">
+			<field name="name">Belizean</field>
+		</record>
+		<record model="auroville.nationality" id="nat21">
+			<field name="name">Beninese</field>
+		</record>
+		<record model="auroville.nationality" id="nat22">
+			<field name="name">Bhutanese</field>
+		</record>
+		<record model="auroville.nationality" id="nat23">
+			<field name="name">Bolivian</field>
+		</record>
+		<record model="auroville.nationality" id="nat24">
+			<field name="name">Bosnian</field>
+		</record>
+		<record model="auroville.nationality" id="nat25">
+			<field name="name">Brazilian</field>
+		</record>
+		<record model="auroville.nationality" id="nat26">
+			<field name="name">British</field>
+		</record>
+		<record model="auroville.nationality" id="nat27">
+			<field name="name">Bruneian</field>
+		</record>
+		<record model="auroville.nationality" id="nat28">
+			<field name="name">Bulgarian</field>
+		</record>
+		<record model="auroville.nationality" id="nat29">
+			<field name="name">Burkinabe</field>
+		</record>
+		<record model="auroville.nationality" id="nat30">
+			<field name="name">Burmese</field>
+		</record>
+		<record model="auroville.nationality" id="nat31">
+			<field name="name">Burundian</field>
+		</record>
+		<record model="auroville.nationality" id="nat32">
+			<field name="name">Cambodian</field>
+		</record>
+		<record model="auroville.nationality" id="nat33">
+			<field name="name">Cameroonian</field>
+		</record>
+		<record model="auroville.nationality" id="nat34">
+			<field name="name">Canadian</field>
+		</record>
+		<record model="auroville.nationality" id="nat35">
+			<field name="name">Cape Verdean</field>
+		</record>
+		<record model="auroville.nationality" id="nat36">
+			<field name="name">Central African</field>
+		</record>
+		<record model="auroville.nationality" id="nat37">
+			<field name="name">Chadian</field>
+		</record>
+		<record model="auroville.nationality" id="nat38">
+			<field name="name">Chilean</field>
+		</record>
+		<record model="auroville.nationality" id="nat39">
+			<field name="name">Chinese</field>
+		</record>
+		<record model="auroville.nationality" id="nat40">
+			<field name="name">Colombian</field>
+		</record>
+		<record model="auroville.nationality" id="nat41">
+			<field name="name">Comoran</field>
+		</record>
+		<record model="auroville.nationality" id="nat42">
+			<field name="name">Congolese</field>
+		</record>
+		<record model="auroville.nationality" id="nat43">
+			<field name="name">Costa Rican</field>
+		</record>
+		<record model="auroville.nationality" id="nat44">
+			<field name="name">Croatian</field>
+		</record>
+		<record model="auroville.nationality" id="nat45">
+			<field name="name">Cuban</field>
+		</record>
+		<record model="auroville.nationality" id="nat46">
+			<field name="name">Cypriot</field>
+		</record>
+		<record model="auroville.nationality" id="nat47">
+			<field name="name">Czech</field>
+		</record>
+		<record model="auroville.nationality" id="nat48">
+			<field name="name">Danish</field>
+		</record>
+		<record model="auroville.nationality" id="nat49">
+			<field name="name">Djibouti</field>
+		</record>
+		<record model="auroville.nationality" id="nat50">
+			<field name="name">Dominican</field>
+		</record>
+		<record model="auroville.nationality" id="nat51">
+			<field name="name">Dutch</field>
+		</record>
+		<record model="auroville.nationality" id="nat52">
+			<field name="name">East Timorese</field>
+		</record>
+		<record model="auroville.nationality" id="nat53">
+			<field name="name">Ecuadorean</field>
+		</record>
+		<record model="auroville.nationality" id="nat54">
+			<field name="name">Egyptian</field>
+		</record>
+		<record model="auroville.nationality" id="nat55">
+			<field name="name">Emirian</field>
+		</record>
+		<record model="auroville.nationality" id="nat56">
+			<field name="name">Equatorial Guinean</field>
+		</record>
+		<record model="auroville.nationality" id="nat57">
+			<field name="name">Eritrean</field>
+		</record>
+		<record model="auroville.nationality" id="nat58">
+			<field name="name">Estonian</field>
+		</record>
+		<record model="auroville.nationality" id="nat59">
+			<field name="name">Ethiopian</field>
+		</record>
+		<record model="auroville.nationality" id="nat60">
+			<field name="name">Fijian</field>
+		</record>
+		<record model="auroville.nationality" id="nat61">
+			<field name="name">Filipino</field>
+		</record>
+		<record model="auroville.nationality" id="nat62">
+			<field name="name">Finnish</field>
+		</record>
+		<record model="auroville.nationality" id="nat63">
+			<field name="name">French</field>
+		</record>
+		<record model="auroville.nationality" id="nat64">
+			<field name="name">Gabonese</field>
+		</record>
+		<record model="auroville.nationality" id="nat65">
+			<field name="name">Gambian</field>
+		</record>
+		<record model="auroville.nationality" id="nat66">
+			<field name="name">Georgian</field>
+		</record>
+		<record model="auroville.nationality" id="nat67">
+			<field name="name">German</field>
+		</record>
+		<record model="auroville.nationality" id="nat68">
+			<field name="name">Ghanaian</field>
+		</record>
+		<record model="auroville.nationality" id="nat69">
+			<field name="name">Greek</field>
+		</record>
+		<record model="auroville.nationality" id="nat70">
+			<field name="name">Grenadian</field>
+		</record>
+		<record model="auroville.nationality" id="nat71">
+			<field name="name">Guatemalan</field>
+		</record>
+		<record model="auroville.nationality" id="nat72">
+			<field name="name">Guinea-Bissauan</field>
+		</record>
+		<record model="auroville.nationality" id="nat73">
+			<field name="name">Guinean</field>
+		</record>
+		<record model="auroville.nationality" id="nat74">
+			<field name="name">Guyanese</field>
+		</record>
+		<record model="auroville.nationality" id="nat75">
+			<field name="name">Haitian</field>
+		</record>
+		<record model="auroville.nationality" id="nat76">
+			<field name="name">Herzegovinian</field>
+		</record>
+		<record model="auroville.nationality" id="nat77">
+			<field name="name">Honduran</field>
+		</record>
+		<record model="auroville.nationality" id="nat78">
+			<field name="name">Hungarian</field>
+		</record>
+		<record model="auroville.nationality" id="nat79">
+			<field name="name">Icelander</field>
+		</record>
+		<record model="auroville.nationality" id="nat80">
+			<field name="name">Indian</field>
+		</record>
+		<record model="auroville.nationality" id="nat81">
+			<field name="name">Indonesian</field>
+		</record>
+		<record model="auroville.nationality" id="nat82">
+			<field name="name">Iranian</field>
+		</record>
+		<record model="auroville.nationality" id="nat83">
+			<field name="name">Iraqi</field>
+		</record>
+		<record model="auroville.nationality" id="nat84">
+			<field name="name">Irish</field>
+		</record>
+		<record model="auroville.nationality" id="nat85">
+			<field name="name">Israeli</field>
+		</record>
+		<record model="auroville.nationality" id="nat86">
+			<field name="name">Italian</field>
+		</record>
+		<record model="auroville.nationality" id="nat87">
+			<field name="name">Ivorian</field>
+		</record>
+		<record model="auroville.nationality" id="nat88">
+			<field name="name">Jamaican</field>
+		</record>
+		<record model="auroville.nationality" id="nat89">
+			<field name="name">Japanese</field>
+		</record>
+		<record model="auroville.nationality" id="nat90">
+			<field name="name">Jordanian</field>
+		</record>
+		<record model="auroville.nationality" id="nat91">
+			<field name="name">Kazakhstani</field>
+		</record>
+		<record model="auroville.nationality" id="nat92">
+			<field name="name">Kenyan</field>
+		</record>
+		<record model="auroville.nationality" id="nat93">
+			<field name="name">Kittian and Nevisian</field>
+		</record>
+		<record model="auroville.nationality" id="nat94">
+			<field name="name">Kuwaiti</field>
+		</record>
+		<record model="auroville.nationality" id="nat95">
+			<field name="name">Kyrgyz</field>
+		</record>
+		<record model="auroville.nationality" id="nat96">
+			<field name="name">Laotian</field>
+		</record>
+		<record model="auroville.nationality" id="nat97">
+			<field name="name">Latvian</field>
+		</record>
+		<record model="auroville.nationality" id="nat98">
+			<field name="name">Lebanese</field>
+		</record>
+		<record model="auroville.nationality" id="nat99">
+			<field name="name">Liberian</field>
+		</record>
+		<record model="auroville.nationality" id="nat100">
+			<field name="name">Libyan</field>
+		</record>
+		<record model="auroville.nationality" id="nat101">
+			<field name="name">Liechtensteiner</field>
+		</record>
+		<record model="auroville.nationality" id="nat102">
+			<field name="name">Lithuanian</field>
+		</record>
+		<record model="auroville.nationality" id="nat103">
+			<field name="name">Luxembourger</field>
+		</record>
+		<record model="auroville.nationality" id="nat104">
+			<field name="name">Macedonian</field>
+		</record>
+		<record model="auroville.nationality" id="nat105">
+			<field name="name">Malagasy</field>
+		</record>
+		<record model="auroville.nationality" id="nat106">
+			<field name="name">Malawian</field>
+		</record>
+		<record model="auroville.nationality" id="nat107">
+			<field name="name">Malaysian</field>
+		</record>
+		<record model="auroville.nationality" id="nat108">
+			<field name="name">Maldivan</field>
+		</record>
+		<record model="auroville.nationality" id="nat109">
+			<field name="name">Malian</field>
+		</record>
+		<record model="auroville.nationality" id="nat110">
+			<field name="name">Maltese</field>
+		</record>
+		<record model="auroville.nationality" id="nat111">
+			<field name="name">Marshallese</field>
+		</record>
+		<record model="auroville.nationality" id="nat112">
+			<field name="name">Mauritanian</field>
+		</record>
+		<record model="auroville.nationality" id="nat113">
+			<field name="name">Mauritian</field>
+		</record>
+		<record model="auroville.nationality" id="nat114">
+			<field name="name">Mexican</field>
+		</record>
+		<record model="auroville.nationality" id="nat115">
+			<field name="name">Micronesian</field>
+		</record>
+		<record model="auroville.nationality" id="nat116">
+			<field name="name">Moldovan</field>
+		</record>
+		<record model="auroville.nationality" id="nat117">
+			<field name="name">Monacan</field>
+		</record>
+		<record model="auroville.nationality" id="nat118">
+			<field name="name">Mongolian</field>
+		</record>
+		<record model="auroville.nationality" id="nat119">
+			<field name="name">Moroccan</field>
+		</record>
+		<record model="auroville.nationality" id="nat120">
+			<field name="name">Mosotho</field>
+		</record>
+		<record model="auroville.nationality" id="nat121">
+			<field name="name">Motswana</field>
+		</record>
+		<record model="auroville.nationality" id="nat122">
+			<field name="name">Mozambican</field>
+		</record>
+		<record model="auroville.nationality" id="nat123">
+			<field name="name">Namibian</field>
+		</record>
+		<record model="auroville.nationality" id="nat124">
+			<field name="name">Nauruan</field>
+		</record>
+		<record model="auroville.nationality" id="nat125">
+			<field name="name">Nepalese</field>
+		</record>
+		<record model="auroville.nationality" id="nat126">
+			<field name="name">Netherlander</field>
+		</record>
+		<record model="auroville.nationality" id="nat127">
+			<field name="name">New Zealander</field>
+		</record>
+		<record model="auroville.nationality" id="nat128">
+			<field name="name">Ni-Vanuatu</field>
+		</record>
+		<record model="auroville.nationality" id="nat129">
+			<field name="name">Nicaraguan</field>
+		</record>
+		<record model="auroville.nationality" id="nat130">
+			<field name="name">Nigerian</field>
+		</record>
+		<record model="auroville.nationality" id="nat131">
+			<field name="name">Nigerien</field>
+		</record>
+		<record model="auroville.nationality" id="nat132">
+			<field name="name">North Korean</field>
+		</record>
+		<record model="auroville.nationality" id="nat133">
+			<field name="name">Northern Irish</field>
+		</record>
+		<record model="auroville.nationality" id="nat134">
+			<field name="name">Norwegian</field>
+		</record>
+		<record model="auroville.nationality" id="nat135">
+			<field name="name">Omani</field>
+		</record>
+		<record model="auroville.nationality" id="nat136">
+			<field name="name">Pakistani</field>
+		</record>
+		<record model="auroville.nationality" id="nat137">
+			<field name="name">Palauan</field>
+		</record>
+		<record model="auroville.nationality" id="nat138">
+			<field name="name">Panamanian</field>
+		</record>
+		<record model="auroville.nationality" id="nat139">
+			<field name="name">Papua New Guinean</field>
+		</record>
+		<record model="auroville.nationality" id="nat140">
+			<field name="name">Paraguayan</field>
+		</record>
+		<record model="auroville.nationality" id="nat141">
+			<field name="name">Peruvian</field>
+		</record>
+		<record model="auroville.nationality" id="nat142">
+			<field name="name">Polish</field>
+		</record>
+		<record model="auroville.nationality" id="nat143">
+			<field name="name">Portuguese</field>
+		</record>
+		<record model="auroville.nationality" id="nat144">
+			<field name="name">Qatari</field>
+		</record>
+		<record model="auroville.nationality" id="nat145">
+			<field name="name">Romanian</field>
+		</record>
+		<record model="auroville.nationality" id="nat146">
+			<field name="name">Russian</field>
+		</record>
+		<record model="auroville.nationality" id="nat147">
+			<field name="name">Rwandan</field>
+		</record>
+		<record model="auroville.nationality" id="nat148">
+			<field name="name">Saint Lucian</field>
+		</record>
+		<record model="auroville.nationality" id="nat149">
+			<field name="name">Salvadoran</field>
+		</record>
+		<record model="auroville.nationality" id="nat150">
+			<field name="name">Samoan</field>
+		</record>
+		<record model="auroville.nationality" id="nat151">
+			<field name="name">San Marinese</field>
+		</record>
+		<record model="auroville.nationality" id="nat152">
+			<field name="name">Sao Tomean</field>
+		</record>
+		<record model="auroville.nationality" id="nat153">
+			<field name="name">Saudi</field>
+		</record>
+		<record model="auroville.nationality" id="nat154">
+			<field name="name">Scottish</field>
+		</record>
+		<record model="auroville.nationality" id="nat155">
+			<field name="name">Senegalese</field>
+		</record>
+		<record model="auroville.nationality" id="nat156">
+			<field name="name">Serbian</field>
+		</record>
+		<record model="auroville.nationality" id="nat157">
+			<field name="name">Seychellois</field>
+		</record>
+		<record model="auroville.nationality" id="nat158">
+			<field name="name">Sierra Leonean</field>
+		</record>
+		<record model="auroville.nationality" id="nat159">
+			<field name="name">Singaporean</field>
+		</record>
+		<record model="auroville.nationality" id="nat160">
+			<field name="name">Slovakian</field>
+		</record>
+		<record model="auroville.nationality" id="nat161">
+			<field name="name">Slovenian</field>
+		</record>
+		<record model="auroville.nationality" id="nat162">
+			<field name="name">Solomon Islander</field>
+		</record>
+		<record model="auroville.nationality" id="nat163">
+			<field name="name">Somali</field>
+		</record>
+		<record model="auroville.nationality" id="nat164">
+			<field name="name">South African</field>
+		</record>
+		<record model="auroville.nationality" id="nat165">
+			<field name="name">South Korean</field>
+		</record>
+		<record model="auroville.nationality" id="nat166">
+			<field name="name">Spanish</field>
+		</record>
+		<record model="auroville.nationality" id="nat167">
+			<field name="name">Sri Lankan</field>
+		</record>
+		<record model="auroville.nationality" id="nat168">
+			<field name="name">Sudanese</field>
+		</record>
+		<record model="auroville.nationality" id="nat169">
+			<field name="name">Surinamer</field>
+		</record>
+		<record model="auroville.nationality" id="nat170">
+			<field name="name">Swazi</field>
+		</record>
+		<record model="auroville.nationality" id="nat171">
+			<field name="name">Swedish</field>
+		</record>
+		<record model="auroville.nationality" id="nat172">
+			<field name="name">Swiss</field>
+		</record>
+		<record model="auroville.nationality" id="nat173">
+			<field name="name">Syrian</field>
+		</record>
+		<record model="auroville.nationality" id="nat174">
+			<field name="name">Taiwanese</field>
+		</record>
+		<record model="auroville.nationality" id="nat175">
+			<field name="name">Tajik</field>
+		</record>
+		<record model="auroville.nationality" id="nat176">
+			<field name="name">Tanzanian</field>
+		</record>
+		<record model="auroville.nationality" id="nat177">
+			<field name="name">Thai</field>
+		</record>
+		<record model="auroville.nationality" id="nat178">
+			<field name="name">Togolese</field>
+		</record>
+		<record model="auroville.nationality" id="nat179">
+			<field name="name">Tongan</field>
+		</record>
+		<record model="auroville.nationality" id="nat180">
+			<field name="name">Trinidadian or Tobagonian</field>
+		</record>
+		<record model="auroville.nationality" id="nat181">
+			<field name="name">Tunisian</field>
+		</record>
+		<record model="auroville.nationality" id="nat182">
+			<field name="name">Turkish</field>
+		</record>
+		<record model="auroville.nationality" id="nat183">
+			<field name="name">Tuvaluan</field>
+		</record>
+		<record model="auroville.nationality" id="nat184">
+			<field name="name">Ugandan</field>
+		</record>
+		<record model="auroville.nationality" id="nat185">
+			<field name="name">Ukrainian</field>
+		</record>
+		<record model="auroville.nationality" id="nat186">
+			<field name="name">Uruguayan</field>
+		</record>
+		<record model="auroville.nationality" id="nat187">
+			<field name="name">Uzbekistani</field>
+		</record>
+		<record model="auroville.nationality" id="nat188">
+			<field name="name">Venezuelan</field>
+		</record>
+		<record model="auroville.nationality" id="nat189">
+			<field name="name">Vietnamese</field>
+		</record>
+		<record model="auroville.nationality" id="nat190">
+			<field name="name">Welsh</field>
+		</record>
+		<record model="auroville.nationality" id="nat191">
+			<field name="name">Yemenite</field>
+		</record>
+		<record model="auroville.nationality" id="nat192">
+			<field name="name">Zambian</field>
+		</record>
+		<record model="auroville.nationality" id="nat193">
+			<field name="name">Zimbabwean</field>
+		</record>
+	</data>
+
+</tryton>

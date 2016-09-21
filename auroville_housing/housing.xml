@@ -1,0 +1,270 @@
+<?xml version="1.0"?>
+<!-- This file is part of Tryton.  The COPYRIGHT file at the top level of
+this repository contains the full copyright notices and license terms. -->
+<tryton>
+    <data>
+
+    	<!-- Create the  icons -->
+        <record model="ir.ui.icon" id="housing_icon">
+            <field name="name">housing</field>
+            <field name="path">icons/housing_icon.svg</field>
+        </record>
+
+        <record model="ir.ui.icon" id="housing_list">
+            <field name="name">housing_list</field>
+            <field name="path">icons/list.svg</field>
+        </record>
+
+        <record model="ir.ui.icon" id="housing_open">
+            <field name="name">housing_open</field>
+            <field name="path">icons/open.svg</field>
+        </record>
+
+        <record model="ir.ui.icon" id="housing_report">
+            <field name="name">housing_report</field>
+            <field name="path">icons/report.svg</field>
+        </record>
+
+        <record model="ir.ui.icon" id="housing_resident">
+            <field name="name">housing_resident</field>
+            <field name="path">icons/resident.svg</field>
+        </record>
+
+        <record model="ir.ui.icon" id="housing_appointment">
+            <field name="name">housing_appointment</field>
+            <field name="path">icons/appointment.svg</field>
+        </record>
+
+
+
+<!-- Initial Menu -->
+        <menuitem name="Housing service" id="auroville_housing_menu" icon="housing"/>
+
+        <menuitem name="Configuration" id="auroville_housing_conf_menu"
+        	parent="auroville_housing_menu" sequence="10" />
+
+       	<menuitem name="Lists" id="auroville_housing_list_menu"
+        	parent="auroville_housing_menu" sequence="20" />
+
+
+        <menuitem name="Documents" id="auroville_housing_docs_menu"
+        	parent="auroville_housing_menu" sequence="30" />
+
+	    <menuitem name="Wizards" id="auroville_housing_wizards_menu"
+        	parent="auroville_housing_menu" sequence="40" />
+
+        <menuitem name="Reports" id="auroville_housing_reports_menu"
+        	parent="auroville_housing_menu" sequence="50" icon="housing_report" />
+
+
+<!-- Configuration Menu -->
+
+	    <record model="ir.action.act_window" id="action_auroville_nationality_view">
+            <field name="name">Nationality</field>
+            <field name="res_model">auroville.nationality</field>
+        </record>
+
+		<record model="ir.action.act_window.view" id="act_auroville_nationality_view_list">
+            <field name="sequence" eval="10"/>
+            <field name="view" ref="auroville_people.auroville_nationality_tree"/>
+            <field name="act_window" ref="action_auroville_nationality_view"/>
+        </record>
+
+        <menuitem action="action_auroville_nationality_view"
+            id="menu_nationality_list" parent="auroville_housing_conf_menu"
+            sequence="20" icon="housing_list"/>
+
+
+	    <record model="ir.action.act_window" id="action_auroville_community_view">
+            <field name="name">Community</field>
+            <field name="res_model">auroville.community</field>
+        </record>
+
+		<record model="ir.action.act_window.view" id="act_auroville_community_view_list">
+            <field name="sequence" eval="10"/>
+            <field name="view" ref="auroville_assets.auroville_community_tree"/>
+            <field name="act_window" ref="action_auroville_community_view"/>
+        </record>
+
+        <menuitem action="action_auroville_community_view"
+            id="menu_community_list" parent="auroville_housing_conf_menu"
+            sequence="30" icon="housing_list" />
+
+
+	    <record model="ir.action.act_window" id="action_auroville_residence_type_view">
+            <field name="name">Residence type</field>
+            <field name="res_model">auroville.residence_type</field>
+        </record>
+
+		<record model="ir.action.act_window.view" id="act_auroville_residence_type_view_list">
+            <field name="sequence" eval="10"/>
+            <field name="view" ref="auroville_assets.auroville_residence_type_tree"/>
+            <field name="act_window" ref="action_auroville_residence_type_view"/>
+        </record>
+
+        <menuitem action="action_auroville_residence_type_view"
+            id="menu_residence_type_list" parent="auroville_housing_conf_menu"
+            sequence="40" icon="housing_list" />
+
+
+	    <record model="ir.action.act_window" id="action_auroville_location_area_view">
+            <field name="name">Location</field>
+            <field name="res_model">auroville.location_area</field>
+        </record>
+
+		<record model="ir.action.act_window.view" id="act_auroville_location_area_view_list">
+            <field name="sequence" eval="10"/>
+            <field name="view" ref="auroville_assets.auroville_location_area_tree"/>
+            <field name="act_window" ref="action_auroville_location_area_view"/>
+        </record>
+
+
+        <menuitem action="action_auroville_location_area_view"
+            id="menu_location_area_list" parent="auroville_housing_conf_menu"
+            sequence="50" icon="housing_list" />
+
+
+	    <record model="ir.action.act_window" id="action_auroville_residence_presence_status_view">
+            <field name="name">Residence presence status</field>
+            <field name="res_model">auroville.residence_presence_status</field>
+        </record>
+
+		<record model="ir.action.act_window.view" id="act_auroville_residence_presence_status_view_list">
+            <field name="sequence" eval="10"/>
+            <field name="view" ref="auroville_assets.auroville_residence_presence_status_tree"/>
+            <field name="act_window" ref="action_auroville_residence_presence_status_view"/>
+        </record>
+
+        <menuitem action="action_auroville_residence_presence_status_view"
+            id="menu_residence_presence_status_list" parent="auroville_housing_conf_menu"
+            sequence="60" icon="housing_list" />
+
+
+
+<!-- List menu  -->
+
+
+		<record model="ir.action.act_window" id="action_auroville_residentss_view">
+            <field name="name">Residents</field>
+            <field name="res_model">auroville.people</field>
+        </record>
+
+		<record model="ir.action.act_window.view" id="act_auroville_residentss_view_list">
+            <field name="sequence" eval="10"/>
+            <field name="view" ref="auroville_people.auroville_people_tree"/>
+            <field name="act_window" ref="action_auroville_residentss_view"/>
+        </record>
+
+        <record model="ir.action.act_window.view" id="act_auroville_residentss_view_form">
+            <field name="sequence" eval="20"/>
+            <field name="view" ref="auroville_people.auroville_people_view_form"/>
+            <field name="act_window" ref="action_auroville_residentss_view"/>
+        </record>
+
+
+       <menuitem action="action_auroville_residentss_view"
+            id="menu_residentss_list" parent="auroville_housing_list_menu"
+            sequence="10" icon="housing_resident" />
+
+
+        <record model="ir.action.act_window" id="action_auroville_assets_view">
+            <field name="name">Assets</field>
+            <field name="res_model">auroville.assets</field>
+        </record>
+
+		<record model="ir.action.act_window.view" id="act_auroville_assets_view_list">
+            <field name="sequence" eval="10"/>
+            <field name="view" ref="auroville_assets.auroville_assets_tree"/>
+            <field name="act_window" ref="action_auroville_assets_view"/>
+        </record>
+
+        <record model="ir.action.act_window.view" id="act_auroville_assets_view_form">
+            <field name="sequence" eval="20"/>
+            <field name="view" ref="auroville_assets.auroville_assets_view_form"/>
+            <field name="act_window" ref="action_auroville_assets_view"/>
+        </record>
+
+        <menuitem action="action_auroville_assets_view"
+            id="menu_assets_list" parent="auroville_housing_list_menu"
+            sequence="20" icon="housing_list" />
+
+
+<!-- Documents menu-->
+
+		<record model="ir.action.act_window" id="action_auroville_agreement_view">
+            <field name="name">Agreements</field>
+            <field name="res_model">auroville.agreement</field>
+        </record>
+
+		<record model="ir.action.act_window.view" id="act_auroville_agreement_view_list">
+            <field name="sequence" eval="10"/>
+            <field name="view" ref="auroville_assets.auroville_agreement_tree"/>
+            <field name="act_window" ref="action_auroville_agreement_view"/>
+        </record>
+
+        <record model="ir.action.act_window.view" id="act_auroville_agreement_view_form">
+            <field name="sequence" eval="20"/>
+            <field name="view" ref="auroville_assets.auroville_agreement_view_form"/>
+            <field name="act_window" ref="action_auroville_agreement_view"/>
+        </record>
+
+	    <menuitem action="action_auroville_agreement_view"
+	        id="menu_agreement_list" parent="auroville_housing_docs_menu"
+	        sequence="10" icon="housing_list" />
+
+
+		<record model="ir.action.act_window" id="action_auroville_request_view">
+            <field name="name">Requests</field>
+            <field name="res_model">auroville.request</field>
+        </record>
+
+		<record model="ir.action.act_window.view" id="act_auroville_request_view_list">
+            <field name="sequence" eval="10"/>
+            <field name="view" ref="auroville_assets.auroville_request_tree"/>
+            <field name="act_window" ref="action_auroville_request_view"/>
+        </record>
+
+        <record model="ir.action.act_window.view" id="act_auroville_request_view_form">
+            <field name="sequence" eval="20"/>
+            <field name="view" ref="auroville_assets.auroville_request_view_form"/>
+            <field name="act_window" ref="action_auroville_request_view"/>
+        </record>
+
+	    <menuitem action="action_auroville_request_view"
+	        id="menu_request_list" parent="auroville_housing_docs_menu"
+	        sequence="10" icon="housing_list" />
+
+
+
+<!-- Wizard menu-->
+
+		<record model="ir.action.wizard" id="act_assets_wizard">
+            <field name="name">Assets test</field>
+            <field name="wiz_name">auroville_assets.agreement_wizard</field>
+        </record>
+
+
+	    <menuitem action="act_assets_wizard"
+	        id="menu_agreement_wizard" parent="auroville_housing_wizards_menu"
+	        sequence="10" icon="housing_list"/>
+
+
+  <!-- Cron -->
+	    <record model="ir.cron" id="cron_trigger_time">
+            <field name="name">Asyncto to People sync</field>
+            <field name="request_user" ref="res.user_admin"/>
+            <field name="user" ref="res.user_trigger"/>
+            <field name="active" eval="True"/>
+            <field name="interval_number">60</field>
+            <field name="interval_type">minutes</field>
+            <field name="number_calls">-1</field>
+            <field name="repeat_missed" eval="False"/>
+            <field name="model">auroville.people</field>
+            <field name="function">asyncto_sync</field>
+
+        </record>
+
+    </data>
+
+
+</tryton>

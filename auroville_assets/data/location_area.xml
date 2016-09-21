@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<!-- This file is part of Tryton.  The COPYRIGHT file at the top level of
+this repository contains the full copyright notices and license terms. -->
+<tryton>
+   	<data skiptest="1">
+		<record model="auroville.location_area" id="la1">
+			<field name="name">Residential Zone</field>
+		</record>
+		<record model="auroville.location_area" id="la2">
+			<field name="name">Industrial Zone</field>
+		</record>
+		<record model="auroville.location_area" id="la3">
+			<field name="name">Cultural Zone</field>
+		</record>
+		<record model="auroville.location_area" id="la4">
+			<field name="name">International Zone</field>
+		</record>
+		<record model="auroville.location_area" id="la5">
+			<field name="name">Greenbelt</field>
+		</record>
+		<record model="auroville.location_area" id="la6">
+			<field name="name">Kuilapalayam area</field>
+		</record>
+		<record model="auroville.location_area" id="la7">
+			<field name="name">Auromodele</field>
+		</record>
+		<record model="auroville.location_area" id="la8">
+			<field name="name">beach</field>
+		</record>
+		<record model="auroville.location_area" id="la9">
+			<field name="name">other</field>
+		</record>
+	</data>
+</tryton>

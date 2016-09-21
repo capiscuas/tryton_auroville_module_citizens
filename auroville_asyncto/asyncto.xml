@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<!-- This file is part of Tryton.  The COPYRIGHT file at the top level of
+this repository contains the full copyright notices and license terms. -->
+<tryton>
+    <data>
+        <!-- Cron -->
+	    <record model="ir.cron" id="cron_trigger_time">
+            <field name="name">LDAP Asyncto Sync</field>
+            <field name="request_user" ref="res.user_admin"/>
+            <field name="user" ref="res.user_trigger"/>
+            <field name="active" eval="True"/>
+            <field name="interval_number">60</field>
+            <field name="interval_type">minutes</field>
+            <field name="number_calls">-1</field>
+            <field name="repeat_missed" eval="False"/>
+            <field name="model">auroville.asyncto</field>
+            <field name="function">ldap_sync</field>
+            <field name="args">'ldap_server','username','password'</field>
+
+        </record>
+
+    </data>
+
+
+</tryton>
